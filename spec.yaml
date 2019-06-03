@@ -1,0 +1,13 @@
+consumerGroup: kafka2sql.tests
+
+streams:
+- topic: tests.output
+  table: test
+  key:
+  - id
+  mapping:
+    id:
+      from: id
+    message:
+      from: message
+
